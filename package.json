@@ -1,0 +1,39 @@
+{
+  "name": "@personspace/server-acl-middleware",
+  "version": "0.1.0",
+  "description": "A package containing default middleware and handling of middleware for PersonaSpace Node.js servers.",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "npm run lint && intern",
+    "lint": "standard lib/**/*.js tests/**/*.js",
+    "lint:fix": "standard lib/**/*.js tests/**/*.js --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/personaspace/node-server-acl-middleware.git"
+  },
+  "keywords": [
+    "PersonaSpace",
+    "ACL",
+    "node",
+    "server",
+    "middleware"
+  ],
+  "author": "Eric L. Bentley",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/personaspace/node-server-acl-middleware/issues"
+  },
+  "homepage": "https://github.com/personaspace/node-server-acl-middleware#readme",
+  "devDependencies": {
+    "intern": "^4.4.1",
+    "standard": "^12.0.1"
+  },
+  "dependencies": {
+    "deepmerge": "^3.2.0"
+  }
+}
