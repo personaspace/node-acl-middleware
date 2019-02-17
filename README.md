@@ -1,6 +1,6 @@
 # PersonaSpace Node.js Server ACL Middleware
 [![CircleCI](https://circleci.com/gh/personaspace/node-server-acl-middleware/tree/master.svg?style=svg)](https://circleci.com/gh/personaspace/node-server-acl-middleware/tree/master)
-[![codecov](https://codecov.io/gh/personaspace/node-acl-middleware/branch/master/graph/badge.svg)](https://codecov.io/gh/personaspace/node-server-acl-middleware)
+[![codecov](https://codecov.io/gh/personaspace/node-server-acl-middleware/branch/master/graph/badge.svg)](https://codecov.io/gh/personaspace/node-server-acl-middleware)
 [![Known Vulnerabilities](https://snyk.io/test/github/personaspace/node-server-acl-middleware/master/badge.svg?targetFile=package.json)](https://snyk.io/test/github/personaspace/node-server-acl-middleware/master?targetFile=package.json)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
