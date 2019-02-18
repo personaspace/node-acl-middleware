@@ -1,5 +1,5 @@
 {
-  "name": "@personspace/server-acl-middleware",
+  "name": "@personaspace/server-acl-middleware",
   "version": "0.1.0",
   "description": "A package containing default middleware and handling of middleware for PersonaSpace Node.js servers.",
   "main": "lib/index.js",
