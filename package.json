@@ -1,6 +1,6 @@
 {
   "name": "@personaspace/server-acl-middleware",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A package containing default middleware and handling of middleware for PersonaSpace Node.js servers.",
   "main": "lib/index.js",
   "directories": {
@@ -32,8 +32,5 @@
   "devDependencies": {
     "intern": "^4.4.1",
     "standard": "^12.0.1"
-  },
-  "dependencies": {
-    "deepmerge": "^3.2.0"
   }
 }

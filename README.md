@@ -23,14 +23,18 @@ npm i @personaspace/server-acl-middleware
 //  request is the web request on a PersonaSpace server.
 const { resolveAcl } = require('@personaspace/server-acl')
 const { middleware } = require('@personaspace/server-acl-middleware')
+
 const resource = './ebntly/data/notes/test'
 const identity = 'https://ebntly.personaspace.com'
-const acl = require(`${resource}.json`)['@acl']
+
 const defaultAcl = require('../support/default-acl.json')
+const acl = require(`${resource}.json`)['@acl']
 const groups = require('../support/groups.json')
 
-resolveAcl(resourcePath, request, identity, acl, defaultAcl, groups, middleware, (resultantPerms) => {
-    //  Check resultantPerms
+
+resolveAcl(resourcePath, request, identity, acl, defaultAcl, groups, middleware, (err, resultantPerms) => {
+  if(err) throw err
+  //  Check resultantPerms
 })
 ```
 
