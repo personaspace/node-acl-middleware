@@ -1,16 +1,21 @@
 {
   "name": "@personaspace/server-acl-middleware",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A package containing default middleware and handling of middleware for PersonaSpace Node.js servers.",
   "main": "lib/index.js",
-  "directories": {
-    "lib": "lib",
-    "test": "tests"
-  },
+  "types": "types/index.d.ts",
+  "files": [
+    "lib/**/*",
+    "types/**/*"
+  ],
   "scripts": {
-    "test": "npm run lint && intern",
-    "lint": "standard lib/**/*.js tests/**/*.js",
-    "lint:fix": "standard lib/**/*.js tests/**/*.js --fix"
+    "test": "npm run build && intern",
+    "lint": "tslint src/**/*.ts tests/**/*.ts",
+    "format": "tslint -c tslint.json src/**/*.ts tests/**/*.ts --fix",
+    "build": "npm run lint && tsc",
+    "build:prod": "npm run lint && tsc -p tsconfig.deploy.json",
+    "preversion": "npm test",
+    "docs": "typedoc --out docs --mode file --theme minimal src/"
   },
   "repository": {
     "type": "git",
@@ -30,7 +35,13 @@
   },
   "homepage": "https://github.com/personaspace/node-server-acl-middleware#readme",
   "devDependencies": {
+    "@personaspace/server-acl-middleware-ondomain": "^0.1.2",
     "intern": "^4.4.1",
-    "standard": "^12.0.1"
+    "server": "^1.0.18",
+    "tslint": "^5.12.1",
+    "typescript": "^3.3.3"
+  },
+  "dependencies": {
+    "@types/node": "^11.9.5"
   }
 }
